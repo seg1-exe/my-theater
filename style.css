@@ -1,0 +1,235 @@
+html {
+	overflow-y: scroll;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+body {
+	overflow-y: visible;
+	position: relative;
+  height: unset;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html, body {
+	overflow-x: hidden;
+	margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* Countdown */
+.hidden{
+  display: none;
+  opacity: 0;
+}
+
+.visible{
+  display: block;
+  opacity: 1;
+}
+
+.countdown-box{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#fff, #757575);
+  overflow: hidden;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 5px;
+  background: #000;
+}
+
+.box:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background: #000;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle.circle2 {
+  width: 600px;
+  height: 600px;
+}
+
+.needle {
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  height: 4px;
+  width: 1200px;
+  background: #000;
+  animation: animate 1s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(-90deg);
+  }
+  
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+.number {
+  width: 10%;
+  height: 100%;
+}
+
+.number div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 25em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: animateNumber 3s linear infinite;
+}
+
+.number div:nth-child(1) { animation-delay: 0s; }
+.number div:nth-child(2) { animation-delay: 1s; }
+.number div:nth-child(3) { animation-delay: 2s; }
+
+@keyframes animateNumber {
+  0%, 33.33% {
+    opacity: 1;
+  }
+
+  33.34%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Panel GSAP */
+#app{
+  color: #fff;
+}
+
+.container {
+	width: 400%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.firstContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+}
+
+.firstContainerLeft{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.firstContainerLeft h1{
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.firstContainerLeft p{
+  font-size: 2.5rem;
+}
+
+.panel{
+  height: 100vh;
+  width: 100vw;
+  cursor: pointer;
+}
+
+.lastContainer {
+  display: flex;
+  height: 100vh;
+}
+
+/* PULP FICTION */
+#pulpFiction{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/pulpfiction/presentation.png');
+}
+
+#pulpFiction img{
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+/* DUNE */
+#dune{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/dune/presentation.png');
+}
+
+#dune h1{
+  font-size: 8rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+}
+
+/* JOKER */
+#joker{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/joker/presentation.png');
+}
+
+#joker h1{
+  font-size: 12rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <title>My theater</title>
+  </head>
+  <body>
+    <div class="countdown-box">
+      <div class="box">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="needle"></div>
+        <div class="number">
+          <div>3</div>
+          <div>2</div>
+          <div>1</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="app" class="hidden">
+      <div class="firstContainer">
+        <div class="firstContainerLeft">
+          <h1 class="mick-caster">WELCOME TO MY <br>THEATER</h1>
+          <p class="product">
+            Here, I'll introduce you to <br>the films, series, and cartoons<br>that I particularly enjoyed.
+          </p>
+        </div>
+        <div class="firstContainerRight">
+          <img src="/images/affichehomepage.png" alt="affiche regroupant différents photographies de films" />
+        </div>
+
+        
+      </div>
+      <div class="container">
+        <a class="panel" id="pulpFiction" href="/films/pulpFiction.html">
+          <img src="/images/pulpfiction/Title.png">
+        </a>
+        <a class="panel" id="dune" href="/films/dune.html">
+          <h1 class="dune">DUNE</h1>
+        </a>
+        <a class="panel" id="joker" href="/films/joker.html">
+          <h1 class="joker">JOKER</h1>
+        </a>
+      </div>
+      <div class="lastContainer">
+        Last Container
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Mick Caster';
+    src: url("/fonts/Police Mick Caster/MickCaster.ttf") format("truetype");
+}
+
+.mick-caster {
+    font-family: 'Mick Caster';
+}
+  
+@font-face {
+    font-family: 'Aachen';
+    src: url("fonts/Aachen/AachenBold.otf") format("opentype");
+}
+
+.aachen {
+    font-family: 'Aachen';
+}
+
+@font-face {
+    font-family: 'Dune';
+    src: url("fonts/Dune Rise/Dune_Rise.ttf") format("truetype");
+}
+
+.dune {
+    font-family: 'Dune';
+}
+
+@font-face {
+    font-family: 'Joker';
+    src: url("fonts/Gothic-Joker.ttf") format("truetype");
+}
+
+.joker {
+    font-family: 'Joker';
+}
