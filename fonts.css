@@ -9,7 +9,7 @@
   
 @font-face {
     font-family: 'Aachen';
-    src: url("fonts/Aachen/AachenBold.otf") format("opentype");
+    src: url("/fonts/Aachen/AachenBold.otf") format("opentype");
 }
 
 .aachen {
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'Dune';
-    src: url("fonts/Dune Rise/Dune_Rise.ttf") format("truetype");
+    src: url("/fonts/Dune Rise/Dune_Rise.ttf") format("truetype");
 }
 
 .dune {
@@ -27,7 +27,7 @@
 
 @font-face {
     font-family: 'Joker';
-    src: url("fonts/Gothic-Joker.ttf") format("truetype");
+    src: url("/fonts/Gothic-Joker.ttf") format("truetype");
 }
 
 .joker {
